@@ -6,6 +6,6 @@ trigger AccountAddressTrigger on Account (before insert, before update) {
                 a.ShippingState=a.BillingState;
                 a.ShippingPostalCode = a.BillingPostalCode;
                 a.ShippingCountry=a.BillingCountry;
-        
+    
     }
 }
